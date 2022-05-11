@@ -25,6 +25,6 @@ export class ItemsService {
   }
 
   async update(id: string, item: Item): Promise<Item> {
-    return await this.itemModel.findByIdAndUpdate(id,item,{new: true});
+    return await this.itemModel.findByIdAndUpdate(id, item, { new: true });
   }
 }
